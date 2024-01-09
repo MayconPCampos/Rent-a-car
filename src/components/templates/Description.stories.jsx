@@ -5,8 +5,8 @@ export default {
   component: Description,
 };
 
-export const DescriptionTemplate = (args) => <Description {...args} />;
+export const Usage = (args) => <Description {...args} />;
 
-DescriptionTemplate.args = {
+Usage.args = {
   children: "Description",
 };
