@@ -7,6 +7,13 @@ const Container = styled.div`
   .copyright {
     text-transform: uppercase;
   }
+
+  hr {
+    border-color: #eee;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 `;
 
 const Footer = () => {
