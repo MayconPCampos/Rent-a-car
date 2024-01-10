@@ -1,7 +1,7 @@
 import Home from "./Home";
 
 export default {
-  title: "Pages/Home",
+  title: "Components/Pages/Home",
   component: Home,
 };
 
