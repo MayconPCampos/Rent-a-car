@@ -13,6 +13,7 @@ const Section = styled.div`
     max-width: 300px;
     height: auto;
     margin: 10px;
+    cursor: pointer;
   }
 `;
 
