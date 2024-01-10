@@ -31,4 +31,17 @@ export const Bold = styled.p`
   color: #191509;
 `;
 
+export const SlideText = styled.p`
+  font-family: "fjallaOne";
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #191509;
+  color: #fff;
+  line-height: 1.2;
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
+`;
+
 export default Text;

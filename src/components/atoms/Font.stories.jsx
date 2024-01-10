@@ -1,4 +1,4 @@
-import { Title, Text, Bold } from "./Font";
+import { Title, Text, Bold, SlideText } from "./Font";
 
 export default {
   title: "Components/Atoms/Font",
@@ -28,4 +28,11 @@ export const FontBold = () => (
     Sed porttitor est lorem, eu tempor elit molestie tempus. Donec molestie non
     arcu non aliquam.
   </Bold>
+);
+
+export const FontSlideText = () => (
+  <SlideText>
+    Sed porttitor est lorem, eu tempor elit molestie tempus. Donec molestie non
+    arcu non aliquam.
+  </SlideText>
 );
