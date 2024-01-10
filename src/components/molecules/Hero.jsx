@@ -1,6 +1,7 @@
 import React from "react";
 import { SlideText } from "../atoms/Font";
 import styled from "styled-components";
+import Booker from "../organisms/Booker";
 
 import Carousel from "react-bootstrap/Carousel";
 
@@ -59,6 +60,7 @@ const Hero = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <Booker />
     </Section>
   );
 };
