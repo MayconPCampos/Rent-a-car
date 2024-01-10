@@ -22,6 +22,10 @@ export const Title = styled.div`
     font-size: 2rem;
     margin: 15px 0px;
   }
+
+  h3 {
+    font-size: 1.7rem;
+  }
 `;
 
 export const Bold = styled.p`
