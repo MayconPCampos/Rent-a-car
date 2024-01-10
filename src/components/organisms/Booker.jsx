@@ -1,12 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { SlideText, Text } from "../atoms/Font";
+import { Text } from "../atoms/Font";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 const Container = styled.div`
   background-color: #141311;
+  box-sizing: border-box;
   padding: 5%;
+
+  @media screen and (min-width: 1172px) {
+    position: absolute;
+    padding: 30px;
+    width: 25%;
+    height: auto;
+    top: 20%;
+    right: 5%;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 1500px) and (min-width: 1172px) {
+    padding: 15px;
+    padding-bottom: 10px;
+    top: 16%;
+  }
 
   .subtitle {
     color: #fff;
@@ -25,20 +42,30 @@ const Container = styled.div`
     border-radius: 0px;
     color: #333;
     width: 100%;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .booker-label {
+    font-family: "fjallaOne";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #191509;
+    color: #fff;
+    line-height: 1.2;
   }
 `;
 
 const Booker = () => {
   return (
     <Container>
-      <SlideText>Rent a car</SlideText>
+      <p className="booker-label">Rent a car</p>
       <Text className="subtitle">Calculate & Book</Text>
-      <Form.Group className="mb-3">
+      <Form.Group>
         <Form.Label className="label">Car types</Form.Label>
         <Form.Select>
           <option>All car types</option>
