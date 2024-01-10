@@ -18,6 +18,18 @@ const Section = styled.div`
     border-left: none;
     border-right: none;
   }
+
+  a {
+    line-height: 1.5rem;
+    color: #191509;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Footer = () => {
@@ -31,10 +43,18 @@ const Footer = () => {
           <Bold>Location</Bold>
           <Text>
             <ul>
-              <li>About Us</li>
-              <li>Our Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Careers</li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Our Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
             </ul>
           </Text>
         </Grid>
@@ -42,10 +62,18 @@ const Footer = () => {
           <Bold>Information</Bold>
           <Text>
             <ul>
-              <li>Rates & Reservation</li>
-              <li>Our Fleet</li>
-              <li>Services</li>
-              <li>Insurance</li>
+              <li>
+                <a href="#">Rates & Reservation</a>
+              </li>
+              <li>
+                <a href="#">Our Fleet</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Insurance</a>
+              </li>
             </ul>
           </Text>
         </Grid>
