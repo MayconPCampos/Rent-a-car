@@ -46,6 +46,10 @@ export const SlideText = styled.p`
   @media (max-width: 767px) {
     font-size: 2rem;
   }
+
+  @media (max-width: 370px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export default Text;
