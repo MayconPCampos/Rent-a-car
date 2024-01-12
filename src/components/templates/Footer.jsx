@@ -13,10 +13,8 @@ const Section = styled.div`
   }
 
   hr {
+    width: 100%;
     border-color: #bbb;
-    border-top: none;
-    border-left: none;
-    border-right: none;
   }
 
   a {
