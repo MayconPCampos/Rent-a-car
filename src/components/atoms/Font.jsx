@@ -23,8 +23,12 @@ export const Title = styled.div`
     margin: 15px 0px;
   }
 
-  h3 {
+  h2 {
     font-size: 1.7rem;
+    border-bottom: 5px solid #666;
+    width: fit-content;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 `;
 
