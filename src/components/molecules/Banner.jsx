@@ -7,7 +7,7 @@ const Background = styled.div`
   background: url("./assets/parallax1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   width: 100%;
   height: 400px;
   display: flex;
