@@ -87,21 +87,21 @@ export const services = [
   {
     title: "All inclusive pricing",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "#",
+    image: "./assets/gal1.png",
   },
   {
     title: "No hidden charges",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "#",
+    image: "./assets/gal1.png",
   },
   {
     title: "Leading suppliers worldwide",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "#",
+    image: "./assets/gal1.png",
   },
   {
     title: "Lowest price guarantee",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "#",
+    image: "./assets/gal1.png",
   },
 ];
