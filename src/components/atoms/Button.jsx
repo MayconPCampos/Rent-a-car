@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 const Button = styled.button`
   margin: 15px 0px;
+  width: fit-content;
+  height: auto;
   padding: 0px;
   border: none;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a {
     font-family: "fjallaOne";
