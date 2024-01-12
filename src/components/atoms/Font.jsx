@@ -43,7 +43,7 @@ export const SlideText = styled.p`
   font-family: "fjallaOne";
   font-size: 4rem;
   text-transform: uppercase;
-  text-shadow: 2px 2px #191509;
+  text-shadow: 1px 1px #18180e;
   color: #fff;
   line-height: 1.2;
 
