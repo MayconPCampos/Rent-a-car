@@ -40,13 +40,14 @@ const Container = styled.div`
     background-color: #ffd018;
     border: none;
     border-radius: 0px;
-    color: #333;
+    color: #191509;
     width: 100%;
     padding: 10px;
     margin: 0;
     margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-family: "fjallaOne";
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
 
@@ -85,7 +86,7 @@ const Booker = () => {
           <option>Model 2</option>
         </Form.Select>
         <Button type="submit" className="submit-btn">
-          Book now
+          Search
         </Button>
       </Form.Group>
     </Container>
