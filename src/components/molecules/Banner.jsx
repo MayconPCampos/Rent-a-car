@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { SlideText } from "../atoms/Font";
 import Button from "../atoms/Button";
 
-const Background = styled.div`
+const Parallax = styled.div`
+  width: 100%;
+  height: 100%;
   background: url("./assets/parallax1.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  background-position-x: 50%;
+`;
+
+const ParallaxLayer = styled.div`
+  background-color: transparent;
   width: 100%;
   height: 400px;
   display: flex;
@@ -15,12 +21,10 @@ const Background = styled.div`
   align-items: center;
   text-align: start;
   padding: 0 20%;
+  font-size: 2rem;
 
-  .banner-price {
-    font-size: 2rem;
-    span {
-      color: #f2c40e;
-    }
+  span {
+    color: #f2c40e;
   }
 
   .banner-btn {
@@ -40,18 +44,38 @@ const Background = styled.div`
 `;
 
 const Banner = () => {
+  const handleScroll = () => {
+    let parallax = document.querySelector(".parallax");
+    if (window.innerWidth < 491) {
+      parallax.style.backgroundPositionY = 650 - window.scrollY * 0.2 + "px";
+    } else if (window.innerWidth < 992) {
+      parallax.style.backgroundPositionY = 550 - window.scrollY * 0.2 + "px";
+    } else if (window.innerWidth < 1172) {
+      parallax.style.backgroundPositionY = 350 - window.scrollY * 0.2 + "px";
+    } else {
+      parallax.style.backgroundPositionY = 550 - window.scrollY * 0.5 + "px";
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <Background>
-      <SlideText>
-        <p>Premium cars</p>
-        <p className="banner-price">
-          Starting from <span>$99/day</span>
-        </p>
-        <Button className="banner-btn">
-          <a>More details</a>
-        </Button>
-      </SlideText>
-    </Background>
+    <>
+      <Parallax className="parallax">
+        <ParallaxLayer>
+          <SlideText>
+            <p>Premium cars</p>
+            <p className="banner-price">
+              Starting from <span>$99/day</span>
+            </p>
+            <Button className="banner-btn">
+              <a>More details</a>
+            </Button>
+          </SlideText>
+        </ParallaxLayer>
+      </Parallax>
+    </>
   );
 };
 
