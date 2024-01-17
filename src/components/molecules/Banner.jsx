@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { SlideText } from "../atoms/Font";
 import Button from "../atoms/Button";
@@ -52,6 +52,8 @@ const Banner = () => {
       parallax.style.backgroundPositionY = 550 - window.scrollY * 0.2 + "px";
     } else if (window.innerWidth < 1172) {
       parallax.style.backgroundPositionY = 350 - window.scrollY * 0.2 + "px";
+    } else if (window.innerWidth < 1367) {
+      parallax.style.backgroundPositionY = 310 - window.scrollY * 0.2 + "px";
     } else {
       parallax.style.backgroundPositionY = 550 - window.scrollY * 0.5 + "px";
     }
@@ -70,7 +72,7 @@ const Banner = () => {
               Starting from <span>$99/day</span>
             </p>
             <Button className="banner-btn">
-              <a>More details</a>
+              <a href="">More details</a>
             </Button>
           </SlideText>
         </ParallaxLayer>
