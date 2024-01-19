@@ -3,7 +3,7 @@ import Card from "../molecules/Card";
 import { cards } from "../../data";
 import styled from "styled-components";
 
-const Container = styled.div`
+const CardsContainer = styled.div`
   display: flex;
 
   @media screen and (max-width: 992px) {
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Cards = () => {
   return (
-    <Container>
+    <CardsContainer>
       {cards.map((card) => (
         <Card
           title={card.title}
@@ -23,7 +23,7 @@ const Cards = () => {
           link={card.link}
         />
       ))}
-    </Container>
+    </CardsContainer>
   );
 };
 

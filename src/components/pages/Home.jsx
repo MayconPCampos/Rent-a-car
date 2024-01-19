@@ -5,6 +5,7 @@ import Hero from "../molecules/Hero";
 import Cards from "../templates/Cards";
 import ServiceArea from "../templates/ServiceArea";
 import Banner from "../molecules/Banner";
+import VehicleCards from "../templates/VehicleCards";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Description />
       <Cards />
       <Banner />
+      <VehicleCards />
       <ServiceArea />
       <Footer />
     </>

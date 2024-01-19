@@ -3,7 +3,7 @@ import { states, services } from "../../data";
 import styled from "styled-components";
 import { Title } from "../atoms/Font";
 
-const Container = styled.div`
+const ServicesContainer = styled.div`
   display: flex;
   max-height: 650px;
 
@@ -13,11 +13,11 @@ const Container = styled.div`
   }
 `;
 
-const States = styled.div`
+const StatesSection = styled.div`
   background-color: #141311;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 5%;
   width: 100%;
   max-height: 100%;
 
@@ -59,7 +59,7 @@ const Services = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 5%;
 
   p {
     color: #fff;
@@ -73,8 +73,8 @@ const Services = styled.div`
 
 const ServiceArea = () => {
   return (
-    <Container>
-      <States>
+    <ServicesContainer>
+      <StatesSection>
         <Title id="service-area">
           <h2>Service Area</h2>
         </Title>
@@ -83,7 +83,7 @@ const ServiceArea = () => {
             <a href="#service-area">{states}</a>
           ))}
         </StatesList>
-      </States>
+      </StatesSection>
       <Services>
         {services.map((services) => (
           <div>
@@ -93,7 +93,7 @@ const ServiceArea = () => {
           </div>
         ))}
       </Services>
-    </Container>
+    </ServicesContainer>
   );
 };
 

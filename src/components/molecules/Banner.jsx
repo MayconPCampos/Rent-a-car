@@ -20,7 +20,7 @@ const ParallaxLayer = styled.div`
   justify-content: end;
   align-items: center;
   text-align: start;
-  padding: 0 20%;
+  padding: 0 10%;
   font-size: 2rem;
 
   span {
@@ -37,6 +37,10 @@ const ParallaxLayer = styled.div`
     background-color: #f2c40e;
     color: #111;
     border-color: #f2c40e;
+
+    a {
+      color: #222;
+    }
   }
   .banner-btn a {
     font-size: 1.2rem;
@@ -47,15 +51,15 @@ const Banner = () => {
   const handleScroll = () => {
     let parallax = document.querySelector(".parallax");
     if (window.innerWidth < 491) {
-      parallax.style.backgroundPositionY = 650 - window.scrollY * 0.2 + "px";
+      parallax.style.backgroundPositionY = 2700 - window.scrollY * 0.8 + "px";
     } else if (window.innerWidth < 992) {
-      parallax.style.backgroundPositionY = 550 - window.scrollY * 0.2 + "px";
+      parallax.style.backgroundPositionY = 2100 - window.scrollY * 0.8 + "px";
     } else if (window.innerWidth < 1172) {
-      parallax.style.backgroundPositionY = 350 - window.scrollY * 0.2 + "px";
+      parallax.style.backgroundPositionY = 1550 - window.scrollY * 0.9 + "px";
     } else if (window.innerWidth < 1367) {
-      parallax.style.backgroundPositionY = 310 - window.scrollY * 0.2 + "px";
+      parallax.style.backgroundPositionY = 1350 - window.scrollY * 0.9 + "px";
     } else {
-      parallax.style.backgroundPositionY = 550 - window.scrollY * 0.5 + "px";
+      parallax.style.backgroundPositionY = 1150 - window.scrollY * 0.8 + "px";
     }
   };
 

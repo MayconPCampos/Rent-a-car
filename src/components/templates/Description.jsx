@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Grid from "@mui/material/Unstable_Grid2";
-
 import Text, { Bold, Title } from "../atoms/Font";
 import Button from "../atoms/Button";
 
-const Section = styled.div`
+const DescriptionSection = styled.div`
   padding: 5%;
 
   img {
@@ -17,7 +16,7 @@ const Section = styled.div`
   }
 `;
 
-const Banner = styled.div`
+const AdvertisingContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +25,7 @@ const Banner = styled.div`
 
 const Description = () => {
   return (
-    <Section>
+    <DescriptionSection>
       <Grid container>
         <Grid xl={6} lg={12}>
           <div>
@@ -51,13 +50,13 @@ const Description = () => {
           </div>
         </Grid>
         <Grid container xl={6} lg={12}>
-          <Banner container>
+          <AdvertisingContainer container>
             <img src="./assets/banner1.jpg" alt="" />
             <img src="./assets/banner2.jpg" alt="" />
-          </Banner>
+          </AdvertisingContainer>
         </Grid>
       </Grid>
-    </Section>
+    </DescriptionSection>
   );
 };
 
