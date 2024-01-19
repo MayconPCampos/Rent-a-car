@@ -105,3 +105,62 @@ export const services = [
     image: "./assets/gal1.png",
   },
 ];
+
+export const vehicleCards = [
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle1.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle2.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle3.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle4.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle5.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle6.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle7.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+  {
+    title: "Lorem ipsum dolor sit ame",
+    description: "300 km included per day",
+    img: "./assets/vehicle8.jpg",
+    price: "1.899",
+    url: "#vehicles",
+  },
+];
