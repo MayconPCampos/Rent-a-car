@@ -12,7 +12,7 @@ const Parallax = styled.div`
   background-position-x: 50%;
 `;
 
-const ParallaxLayer = styled.div`
+const BannerContent = styled.div`
   background-color: transparent;
   width: 100%;
   height: 400px;
@@ -50,26 +50,20 @@ const ParallaxLayer = styled.div`
 const Banner = () => {
   const handleScroll = () => {
     let parallax = document.querySelector(".parallax");
-    if (window.innerWidth < 491) {
-      parallax.style.backgroundPositionY = 2700 - window.scrollY * 0.8 + "px";
-    } else if (window.innerWidth < 992) {
-      parallax.style.backgroundPositionY = 2100 - window.scrollY * 0.8 + "px";
-    } else if (window.innerWidth < 1172) {
-      parallax.style.backgroundPositionY = 1550 - window.scrollY * 0.9 + "px";
-    } else if (window.innerWidth < 1367) {
-      parallax.style.backgroundPositionY = 1350 - window.scrollY * 0.9 + "px";
-    } else {
-      parallax.style.backgroundPositionY = 1150 - window.scrollY * 0.8 + "px";
-    }
+    let bannerPositionY = document
+      .querySelector(".banner-section")
+      .getBoundingClientRect().top;
+
+    parallax.style.backgroundPositionY = (bannerPositionY - 100) * 0.85 + "px";
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
   return (
-    <>
+    <div className="banner-section">
       <Parallax className="parallax">
-        <ParallaxLayer>
+        <BannerContent>
           <SlideText>
             <p>Premium cars</p>
             <p className="banner-price">
@@ -79,9 +73,9 @@ const Banner = () => {
               <a href="">More details</a>
             </Button>
           </SlideText>
-        </ParallaxLayer>
+        </BannerContent>
       </Parallax>
-    </>
+    </div>
   );
 };
 
